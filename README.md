@@ -75,9 +75,9 @@ customer-segmentation-project/
 ├── notebooks/
 │   └── 01-EDA-customer-segmentation.ipynb
 ├── visuals/
-│   └── cluster_plots.png (optional)
-├── scripts/ (optional)
-├── models/ (optional)
+│   └── cluster_plots.png
+├── scripts/
+├── models/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
@@ -85,7 +85,26 @@ customer-segmentation-project/
 
 ---
 
+---
+
+## 💾 Model Saving & Reusability
+
+The final K-Means clustering model was saved using the `joblib` module in `.pkl` format to ensure reusability and compatibility with deployment environments.
+
+```python
+import joblib
+
+# Save the trained model
+joblib.dump(kmeans, "models/kmeans_model.pkl")
+
+# To load the model later:
+loaded_model = joblib.load("models/kmeans_model.pkl")
+
+
+---
+
 ## Author
 
 - Samed Demir
 - Linkedin: (https://www.linkedin.com/in/samed-demir/)
+```
