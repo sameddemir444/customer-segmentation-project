@@ -85,9 +85,7 @@ customer-segmentation-project/
 
 ---
 
----
-
-## 💾 Model Saving & Reusability
+## Model Saving & Reusability
 
 The final K-Means clustering model was saved using the `joblib` module in `.pkl` format to ensure reusability and compatibility with deployment environments.
 
@@ -99,7 +97,7 @@ joblib.dump(kmeans, "models/kmeans_model.pkl")
 
 # To load the model later:
 loaded_model = joblib.load("models/kmeans_model.pkl")
-
+```
 
 ---
 
@@ -107,4 +105,5 @@ loaded_model = joblib.load("models/kmeans_model.pkl")
 
 - Samed Demir
 - Linkedin: (https://www.linkedin.com/in/samed-demir/)
-```
+
+---
